@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #fff5f7;
+  color: #3d282d;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, .font-serif {
+  font-family: var(--font-serif);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #fff5f7;
+}
+::-webkit-scrollbar-thumb {
+  background: #ffb6c1;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ff8da1;
+}
+
+/* Baby Pink Glass & Cards */
+.rose-card {
+  background: #ffffff;
+  border: 1px solid #ffd6df;
+  box-shadow: 0 4px 20px rgba(255, 182, 193, 0.12);
+}
+
+.rose-nav {
+  background: rgba(255, 245, 247, 0.94);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid #ffd6df;
+}
+
+/* Baby Pink Accent Buttons & Badges */
+.bg-rose-accent {
+  background: linear-gradient(135deg, #ffb6c1 0%, #ff8da1 100%);
+  color: #3d282d;
+  font-weight: 600;
+}
+.bg-rose-accent:hover {
+  background: linear-gradient(135deg, #ff8da1 0%, #ff748b 100%);
+  color: #000000;
+}
+
+.bg-rose-soft {
+  background-color: #ffe5ec;
+  color: #9e4b5c;
+}
+
+.bg-pink-hero {
+  background: linear-gradient(135deg, #ffeef2 0%, #ffd6df 100%);
+}
+
+.bg-pink-bogo {
+  background: linear-gradient(135deg, #ffe5ec 0%, #ffc2d1 100%);
+}
+
+/* Custom Sliders */
+input[type="range"] {
+  accent-color: #ff8da1;
+}
